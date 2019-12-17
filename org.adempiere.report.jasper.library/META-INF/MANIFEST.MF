@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Library
+Bundle-Name: iDempiere JasperReport Library
 Bundle-SymbolicName: org.adempiere.report.jasper.library;singleton:=true
 Bundle-Version: 7.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-11

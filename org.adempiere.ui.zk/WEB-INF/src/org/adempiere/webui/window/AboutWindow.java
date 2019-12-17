@@ -197,6 +197,9 @@ public class AboutWindow extends Window implements EventListener<Event> {
 		Tabpanel tabPanel = createAbout();
 		tabPanel.setParent(tabPanels);
 
+		MUser user = MUser.get(Env.getCtx());
+		if (user.isAdministrator()) // only open to administrator
+		{
 		//Credit
 		tab = new Tab();
 		tab.setLabel(Msg.getMsg(Env.getCtx(), "Credits"));
@@ -227,6 +230,7 @@ public class AboutWindow extends Window implements EventListener<Event> {
 		if (tabPanel != null) {
 			tab.setParent(tabs);
 			tabPanel.setParent(tabPanels);
+		}
 		}
 	}
 
@@ -546,6 +550,22 @@ public class AboutWindow extends Window implements EventListener<Event> {
 		ZKUpdateUtil.setWidth(div, "100%");
 		ZKUpdateUtil.setHeight(div, "100%");
 		div.setStyle("overflow: auto;");
+		Vbox vbox0 = new Vbox();
+		LayoutUtils.addSclass("about-credit-panel-logo", vbox0);
+		vbox0.setParent(div);
+		Label caption0 = new Label("KylinBizSuite by");
+		caption0.setStyle("font-weight: bold;");
+		caption0.setParent(vbox0);
+		ToolBarButton link0 = new ToolBarButton();
+		link0.setHeight("72px");
+		link0.setImage(ThemeManager.getVendorLogo());
+		link0.setParent(vbox0);
+		link0.setHref("http://www.kylinsystems.com");
+		link0.setTarget("_blank");
+		Separator separator0 = new Separator();
+		separator0.setBar(true);
+		separator0.setParent(vbox0);
+
 		Vbox vbox = new Vbox();
 		LayoutUtils.addSclass("about-credit-panel-logo", vbox);
 		vbox.setParent(div);
@@ -666,16 +686,28 @@ public class AboutWindow extends Window implements EventListener<Event> {
 		
 		Image image = new Image(ThemeManager.getLargeLogo());
 		image.setParent(vbox);
+		Text text = new Text(Adempiere.getVersion());
+		text.setParent(vbox);
 
+		text = new Text("Based on iDempiere");
+		text.setParent(vbox);
+		Separator separator = new Separator();
+		separator.setParent(vbox);
+		
+		MUser user = MUser.get(Env.getCtx());
+		if (user.isAdministrator()) // only open to administrator
+		{
+		image = new Image(ThemeManager.getLargeLogoIdempiere());
+		image.setParent(vbox);
 		vbox = new Vbox();
 		LayoutUtils.addSclass("about-main-panel-version", vbox);
 		ZKUpdateUtil.setWidth(vbox, "100%");
 		vbox.setAlign("center");
 		vbox.setParent(vb);
 		
-		Text text = new Text(Adempiere.getSubtitle());
+		text = new Text(Adempiere.getSubtitle());
 		text.setParent(vbox);
-		Separator separator = new Separator();
+		separator = new Separator();
 		separator.setParent(vbox);
 		text = new Text(Adempiere.getVersion());
 		text.setParent(vbox);
@@ -709,6 +741,7 @@ public class AboutWindow extends Window implements EventListener<Event> {
 		link.setHref("http://groups.google.com/group/idempiere");
 		link.setTarget("_blank");
 		link.setParent(vbox);
+		}
 
 		return tabPanel;
 	}

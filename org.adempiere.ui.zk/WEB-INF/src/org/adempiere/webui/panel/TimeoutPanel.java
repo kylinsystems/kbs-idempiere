@@ -144,8 +144,12 @@ public class TimeoutPanel extends Window implements
 		{
 				timer.stop();
 				SessionManager.logoutSession();
-				Executions.sendRedirect("/index.zul");
-				Clients.confirmClose(null);
+				try {
+					Executions.sendRedirect("/index.zul");
+					Clients.confirmClose(null);
+				} catch (Exception ex) {
+					// ignore exception
+				}
 		}
 	}
 }

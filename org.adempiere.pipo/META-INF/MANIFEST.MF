@@ -10,7 +10,13 @@ Import-Package: org.apache.commons.codec,
  org.apache.tools.ant,
  org.apache.tools.ant.taskdefs,
  org.apache.xerces.jaxp,
- org.osgi.framework
+ org.xml.sax,
+ org.xml.sax.helpers,
+ org.osgi.framework,
+ javax.xml.transform,
+ javax.xml.transform.stream,
+ javax.xml.transform.sax,
+ javax.xml.parsers
 Export-Package: org.adempiere.pipo.srv,
  org.adempiere.pipo2,
  org.adempiere.pipo2.exception

@@ -197,6 +197,7 @@ public class RolePanel extends Window implements EventListener<Event>, Deferrabl
     	td.setDynamicProperty("colspan", "2");
     	Image image = new Image();
         image.setSrc(ThemeManager.getLargeLogo());
+        image.setVisible(false);
         td.appendChild(image);
 
     	tr = new Tr();
@@ -247,7 +248,10 @@ public class RolePanel extends Window implements EventListener<Event>, Deferrabl
     	td.setSclass(ITheme.LOGIN_FIELD_CLASS);
     	tr.appendChild(td);
     	td.appendChild(lstOrganisation);
-
+    	
+		MUser user = MUser.get(Env.getCtx());
+		if (user.isAdministrator()) // only open to administrator
+		{
     	tr = new Tr();
         tr.setId("rowWarehouse");
         table.appendChild(tr);
@@ -259,7 +263,8 @@ public class RolePanel extends Window implements EventListener<Event>, Deferrabl
     	td.setSclass(ITheme.LOGIN_FIELD_CLASS);
     	tr.appendChild(td);
     	td.appendChild(lstWarehouse);
-
+		}
+		
     	tr = new Tr();
         tr.setId("rowDate");
         table.appendChild(tr);

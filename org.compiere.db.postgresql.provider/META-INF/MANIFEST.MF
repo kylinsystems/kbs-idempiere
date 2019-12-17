@@ -15,6 +15,11 @@ Import-Package: junit.framework;version="3.8.2",
  org.jfree.io;version="1.0.23",
  org.junit;version="4.8.1",
  org.osgi.framework,
+ org.w3c.dom,
+ javax.net,
+ javax.management,
+ javax.naming,
+ javax.sql,
  org.slf4j;version="1.7.2"
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.adempiere.db.postgresql.PostgreSQLBundleActivator

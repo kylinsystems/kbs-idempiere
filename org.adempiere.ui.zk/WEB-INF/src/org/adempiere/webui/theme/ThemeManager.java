@@ -29,6 +29,16 @@ import org.zkoss.image.AImage;
  *
  */
 public final class ThemeManager {
+	
+	/**
+	 * @return url for vendor logo
+	 */
+	public static String getVendorLogo() {
+		String theme = getTheme();
+		String def = ITheme.THEME_PATH_PREFIX+theme+ITheme.VENDOR_LOGO_IMAGE;
+		return def;
+	}
+
 
 	/**
 	 * @return url for large logo
@@ -50,7 +60,16 @@ public final class ThemeManager {
 			url = MSysConfig.getValue(MSysConfig.WEBUI_LOGOURL, def);
 		return url;
 	}
-
+	
+	/**
+	 * @return url for default idempiere large logo
+	 */
+	public static String getLargeLogoIdempiere() {
+		String theme = getTheme();
+		String def = ITheme.THEME_PATH_PREFIX+ITheme.ZK_THEME_DEFAULT+ITheme.LOGIN_LOGO_IMAGE;
+		return def;
+	}	
+	
 	/**
 	 * @return name of active theme
 	 */

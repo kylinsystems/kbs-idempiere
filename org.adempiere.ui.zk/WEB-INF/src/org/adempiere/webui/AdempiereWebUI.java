@@ -90,7 +90,7 @@ public class AdempiereWebUI extends Window implements EventListener<Event>, IWeb
 	
 	public static final String APPLICATION_DESKTOP_KEY = "application.desktop";
 
-	public static String APP_NAME = null;
+	public static String APP_NAME = "Kylin BizSuite";
 
     public static final String UID          = "1.0.0";
     

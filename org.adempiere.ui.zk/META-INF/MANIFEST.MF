@@ -171,7 +171,7 @@ Require-Bundle: org.adempiere.base;bundle-version="0.0.0",
  com.sun.activation.jakarta.activation;bundle-version="1.2.1"
 Bundle-Activator: org.adempiere.webui.WebUIActivator
 Eclipse-ExtensibleAPI: true
-Web-ContextPath: webui
+Web-ContextPath: app
 Service-Component: OSGI-INF/*.xml
 Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: org.adempiere.ui.zk

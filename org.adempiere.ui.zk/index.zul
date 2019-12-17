@@ -290,6 +290,25 @@ Copyright (C) 2007 Ashley G Ramdass.
 		}
 	]]>
 	</script>
+	<script type='text/javascript'>
+	// Fixing by KBS
+	// Auto-refresh page once 1 time only after first load index.zul per Session, 
+	// intend to fix web page (CSS, Javascript, image) loading issue from Jetty running on Karaf
+	(function()
+	{
+	  if( window.sessionStorage )
+	  {
+		if( !sessionStorage.getItem( 'onfirstLoad_KBS' ) )
+		{
+		  sessionStorage[ 'onfirstLoad_KBS' ] = true;
+		  window.location.reload();
+		}  	
+		else 
+		{
+		}
+	  }
+	})();
+	</script>		
     <include src="${themePreference}"/>
 	<window use="org.adempiere.webui.AdempiereWebUI"/>
 </zk>

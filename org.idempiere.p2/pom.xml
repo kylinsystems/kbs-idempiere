@@ -46,6 +46,13 @@
 							<goal>materialize-products</goal>
 						</goals>
 					</execution>
+					<execution>
+						<!-- create zip file with the installed product -->
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>					
 				</executions>
 				<configuration>
 					<source>repository</source>
@@ -53,7 +60,8 @@
 						<product>
 							<!-- The uid in the .product file, NOT the name of the .product file -->
 							<id>${idempiere.product.id}</id>
-							<archiveFileName>idempiere-server-${unqualifiedVersion}-${buildQualifier}</archiveFileName>
+							<archiveFileName>kbs-server-${unqualifiedVersion}.${buildQualifier}</archiveFileName>
+							<rootFolder>idempiere-server</rootFolder>
 						</product>
 					</products>
 				</configuration>

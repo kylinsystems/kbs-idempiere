@@ -226,6 +226,20 @@ public class PoFiller{
 				return 0;
 			}
 		} else {
+			//start fix
+			//1. workaround fix for column Record_ID in table AD_PInstance
+			if ("Record_ID".equalsIgnoreCase(columnName) 
+					&& "AD_PInstance".equalsIgnoreCase(element.qName)) { 
+				po.set_ValueNoCheck(columnName, 0); //Record_ID == 0
+				return 0;
+			}
+			//2. workaround fix for column SeqNo in table AD_PInstance_Para
+			if ("SeqNo".equalsIgnoreCase(columnName) 
+					&& "AD_PInstance_Para".equalsIgnoreCase(element.qName)) { 
+				po.set_ValueNoCheck(columnName, 0); //SeqNo == 0
+				return 0;
+			}
+			//end fix
 			po.set_ValueNoCheck(columnName, null);
 			return 0;
 		}
