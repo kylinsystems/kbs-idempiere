@@ -3,7 +3,7 @@
 }
 
 .login-window .z-window-content {
-     background-image: url(../images/background-world.png) !important;
+     background-image: url(../images/background-world.jpg) !important;
      background-position: center;
 	 /*background-attachment: scroll;*/
 	 background-repeat: no-repeat;
@@ -16,10 +16,10 @@
 	font-weight: 100;
 	color: #222222;
 	z-index: 1;
-	padding: 60px 40px 60px 40px;
+	padding: 80px 60px 60px 5px;
 	margin: 0;
 	text-align: center;
-	background-image: url(../images/login-logo.png) !important;
+	background-image: url(../images/login-logo-only.png) !important;
 	background-repeat: no-repeat;
 }
 
@@ -27,7 +27,7 @@
 	<%-- background-image: url(../images/login-box-header.png); --%>
 	background-color: transparent;
 	z-index: 2;
-	height: 54px;
+	height: 210px;
 	width: 660px;
 }
 
@@ -49,7 +49,7 @@
 	background-attachment: scroll;
 	background-repeat: repeat-y;
 	z-index: 2;
-	height: 110px;
+	height: 210px;
 	width: 660px;
 }
 

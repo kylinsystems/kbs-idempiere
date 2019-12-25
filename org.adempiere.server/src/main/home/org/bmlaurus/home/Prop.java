@@ -50,6 +50,7 @@ public final class Prop implements Serializable {
 	public static final String	OPTION_LINK 		=	"OptionLink";
 	public static final String	FELIX_LINK 			=	"FelixLink";
 	public static final String	MONITOR_LINK 		=	"iDempiereMonitorLink";
+	public static final String	APPLOGIN_LINK		=	"AppLoginLink";
 	
 	/** Custom Texts */
 	public static final String OPTION_TEXT 			= "OptionText";
@@ -64,6 +65,7 @@ public final class Prop implements Serializable {
 	public static final String WIKI_TEXT 			= "WikiText";
 	public static final String FORUMS_TEXT 			= "ForumsText";
 	public static final String SUPPORTREQUEST_TEXT 	= "SupportRequestText";
+	public static final String APPLOGIN_TEXT		= "AppLoginText";
 	
 	public static final String TITLE 				= "Title";
 	
@@ -79,6 +81,7 @@ public final class Prop implements Serializable {
 	private static final String	DEF_WIKI_LINK 		=	"http://wiki.idempiere.org/";
 	private static final String DEF_FORUMS_LINK		=	"http://groups.google.com/group/idempiere";
 	private static final String	DEF_SUPPORTREQ_LINK	=	"http://jira.idempiere.com";
+	private static final String	DEF_APPLOGIN_LINK 		=	"app";
 	
 	/**Social Network*/
 	public static final String	SOC_FACEBOOK		=	"Facebook";
@@ -183,6 +186,8 @@ public final class Prop implements Serializable {
 			s_prop.setProperty(SUPPORTREQ_LINK, DEF_SUPPORTREQ_LINK);
 		if(s_prop.getProperty(OPTION_LINK)==null||s_prop.getProperty(OPTION_LINK).length()<=0)
 			s_prop.setProperty(OPTION_LINK, "#");
+		if(s_prop.getProperty(APPLOGIN_LINK)==null||s_prop.getProperty(APPLOGIN_LINK).length()<=0)
+			s_prop.setProperty(APPLOGIN_LINK, DEF_APPLOGIN_LINK);
 	}
 	
 	public static String loadCss(){
