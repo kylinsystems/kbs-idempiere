@@ -64,6 +64,24 @@
 		<module>org.idempiere.p2</module>
 		<module>org.idempiere.javadoc</module>
 		<module>${idempiere.target}</module>
+
+		<module>../kbs-theme</module>
+		<module>../kbs-odt/com.kylinsystems.kbs.odt</module>
+		<module>../kbs-plugins/kbs-plugin-accessmaintain</module>
+		<module>../kbs-plugins/kbs-plugin-rest/com.trekglobal.idempiere.rest.api</module>
+		<!-- <module>../kbs-plugins/kbs-cde</module> 
+		<module>../kbs-plugins/kbs-dcaic</module>
+		<module>../kbs-plugins/kbs-plugin-kdb</module>
+		<module>../kbs-plugins/kbs-mfg</module>
+		<module>../kbs-plugins/kbs-wms</module>
+		<module>../kbs-plugins/kbs-wmsext</module>
+		
+		<module>../kbs-plugins/kbs-pos</module>
+		<module>../kbs-plugins/kbs-tms</module>
+		<module>../kbs-plugins/kbs-infogadget</module>
+		<module>../kbs-plugins/kbs-wysiwygeditor</module>
+		<module>../kbs-plugins/kbs-cashforecasting</module>
+		<module>../kbs-plugins/kbs-test3269</module> -->
 	</modules>
 
 </project>
