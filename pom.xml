@@ -58,5 +58,4 @@
 		<module>org.idempiere.javadoc</module>
 		<module>${idempiere.target}</module>
 	</modules>
-
 </project>
