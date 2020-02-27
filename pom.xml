@@ -58,11 +58,4 @@
 		<module>org.idempiere.javadoc</module>
 		<module>${idempiere.target}</module>
 	</modules>
-<distributionManagement>
-   <repository>
-     <id>github</id>
-     <name>GitHub OWNER Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/kylinsystems/kbs-idempiere</url>
-   </repository>
-</distributionManagement>
 </project>
