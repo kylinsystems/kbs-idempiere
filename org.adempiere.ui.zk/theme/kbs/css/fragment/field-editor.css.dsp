@@ -191,6 +191,13 @@ span.grid-combobox-editor {
 	border: none;
 }
 
+.image-fit-contain {
+    object-fit: contain;
+}
+.z-cell.image-field-cell {
+    z-index: 1;
+}
+
 .html-field {
 	cursor: pointer;
 	border: 1px solid #C5C5C5;
