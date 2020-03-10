@@ -10,7 +10,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/bsh.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/commons-validator.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/cron4j.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/jnlp.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/avalon-framework-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/bcmail-jdk15on.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/bcpkix-jdk15on.jar"/>
