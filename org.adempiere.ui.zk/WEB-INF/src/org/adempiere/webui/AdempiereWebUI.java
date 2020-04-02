@@ -81,6 +81,8 @@ import org.zkoss.zul.Window;
  */
 public class AdempiereWebUI extends Window implements EventListener<Event>, IWebClient
 {
+	public static final String DESKTOP_SESSION_INVALIDATED_ATTR = "DesktopSessionInvalidated";
+
 	/**
 	 * 
 	 */
@@ -569,9 +571,11 @@ public class AdempiereWebUI extends Window implements EventListener<Event>, IWeb
 		//redirect must happens before removeDesktop below, otherwise you get NPE
 		Executions.getCurrent().sendRedirect("index.zul");
 		
-		//remove old desktop    	
-		if (desktopCache != null)
+		//remove old desktop
+		if (desktopCache != null) {
+			desktop.setAttribute(DESKTOP_SESSION_INVALIDATED_ATTR, Boolean.TRUE);
 			desktopCache.removeDesktop(desktop);
+		}
 	}
 	
 	@Override
@@ -589,5 +593,32 @@ public class AdempiereWebUI extends Window implements EventListener<Event>, IWeb
 			uploadSetting.append(",maxsize=").append(size);
 		}
 		return uploadSetting.toString();
+	}
+	
+	/**
+	 * Increase server push schedule failures count 
+	 * @param d
+	 */
+	public static void increaseScheduleFailures(Desktop d) {
+		Integer count = (Integer) d.getAttribute(SERVERPUSH_SCHEDULE_FAILURES);
+		if (count != null)
+			count = Integer.valueOf(count.intValue()+1);
+		else
+			count = Integer.valueOf(1);
+		d.setAttribute(SERVERPUSH_SCHEDULE_FAILURES, count);
+	}
+	
+	/**
+	 * 
+	 * @param d
+	 * @return server push schedule failures count
+	 */
+	public static int getScheduleFailures(Desktop d) {
+		int failures = 0;
+		Object attr = d.getAttribute(AdempiereWebUI.SERVERPUSH_SCHEDULE_FAILURES);
+		if (attr != null && attr instanceof Integer)
+			failures = ((Integer)attr).intValue();
+		
+		return failures;
 	}
 }
