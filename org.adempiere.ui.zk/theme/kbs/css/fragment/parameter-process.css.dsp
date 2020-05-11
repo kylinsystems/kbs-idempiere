@@ -9,8 +9,12 @@ when detect side effect, fix to only apply for parameter window*/
 	height: 100%;
     background-color: #FFFFFF;
 }
+.process-modal-dialog .main-parameter-layout{
+	height: auto;
+	flex-basis: auto;
+}
 .process-modal-dialog.z-window > .z-window-content {
-	height: 100%;
+	flex: 1 1 auto;
 }
 
 .main-parameter-layout,
@@ -42,7 +46,7 @@ when detect side effect, fix to only apply for parameter window*/
 }	
 
 .message-paramenter{
-	max-height: 150pt; 
+	max-height: 300pt; 
 	overflow: hidden; 
 	margin: 10px;
 }
@@ -70,6 +74,10 @@ when detect side effect, fix to only apply for parameter window*/
 .save-parameter-container{
 	overflow-x: auto;
 	overflow-y: hidden;
+}
+
+.result-parameter-layout {
+	overflow: auto;
 }
 
 .popup-dialog.z-window.z-window-overlapped.z-window-shadow,
