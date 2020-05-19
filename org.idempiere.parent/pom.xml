@@ -585,7 +585,7 @@
    <repository>
      <id>github</id>
      <name>GitHub kylinsystems Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/kylinsystems/maven-repo</url>
+     <url>https://maven.pkg.github.com/kylinsystems/maven-repo2</url>
    </repository>
 </distributionManagement>
 
