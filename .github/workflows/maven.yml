@@ -14,4 +14,4 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -DforceContextQualifier=latest clean verify deploy -U --file pom.xml
+      run: mvn -DforceContextQualifier=latest clean verify deploy -Dregistry=https://maven.pkg.github.com/kylinsystems -Dtoken=GH_TOKEN -U --file pom.xml
