@@ -11,11 +11,5 @@
 	<classpathentry exported="true" kind="lib" path="lib/commons-validator.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/cron4j.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/avalon-framework-api.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcmail-jdk15on.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcpkix-jdk15on.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcprov-jdk15on.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bctsp-jdk15on.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/cryptacular.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/passay.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

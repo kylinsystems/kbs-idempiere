@@ -63,10 +63,6 @@ div.z-column-cnt, div.z-grid-header div.z-auxheader-cnt {
 	padding: 2px 3px 1px;
 }
 
-.z-column-content,.z-auxheader-content{
-	padding: 0px 3px 0px;
-}
-
 .z-grid-body .z-cell {
 	padding: 2px 3px;
 }

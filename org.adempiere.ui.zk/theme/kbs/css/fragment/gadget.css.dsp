@@ -10,8 +10,7 @@
 }
 
 .z-panel-head {
-	background-image: none;
-	background-color: #91BEE6;
+	background-image: none; background-color: #91BEE6;
 }
 
 .z-panel {

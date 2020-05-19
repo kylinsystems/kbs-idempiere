@@ -141,8 +141,8 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 
 input[type="checkbox"]:focus
 {
-      outline: #0000ff auto 1px;
-    -moz-outline-radius: 3px;
+ 	 outline: #0000ff auto 1px;
+	-moz-outline-radius: 3px;
 }
 
 <%-- Quick Form Read-only Component --%>

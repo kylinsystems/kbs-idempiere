@@ -8,12 +8,11 @@
 }
 
 .z-toolbarbutton-content {
-	padding: 0px;
+	padding: 0px 3px;
 }
 
 .toolbar-button {
-	background-color: transparent; 
-	display:inline-block; 
+	background-color: transparent; 	
 	margin-left: 1px; 
 	margin-right: 1px; 
 	width: 28px; 
@@ -25,8 +24,7 @@
 	width: 24px;
 	height: 24px;
 	padding: 1px;
-	border: none;
-	display: inline-block;
+	border: none;	
 }
 
 .depressed img {
@@ -96,13 +94,13 @@
 	color: inherit;
 }
 .font-icon-menuitem i {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 .toolbar-searchbox {
     margin-right: 10px;
     margin-left: 10px;
     border: 1px;
-    padding: 1px;
+    padding: 0px;
 }
 @media screen and (max-width: 768px) {
   .toolbar-searchbox {

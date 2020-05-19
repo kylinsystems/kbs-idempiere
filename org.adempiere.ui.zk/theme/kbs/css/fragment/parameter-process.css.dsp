@@ -5,7 +5,7 @@ it fix some issue relate resize, but can make side effect
 when detect side effect, fix to only apply for parameter window*/
 .z-window.z-window-noborder.z-window-noheader.z-window-embedded,
 .z-window.z-window-noborder.z-window-noheader.z-window-embedded .z-window-content,
-.main-parameter-layout{
+.main-parameter-layout {
 	height: 100%;
     background-color: #FFFFFF;
 }
@@ -34,16 +34,16 @@ when detect side effect, fix to only apply for parameter window*/
 }
 .top-parameter-layout{
 	overflow: auto;
+	padding-bottom: 2vh;
+	flex-basis: auto;
+	border: 1px solid #c5c5c5;
 }
 
 .bottom-parameter-layout{
-	background-color: #C5C5C5;
-	padding: 1px 0px 0px 0px;
+	background-color: #e9f0ff;
+	padding: 4px 4px 0px 4px;
+	border: 1px solid #c5c5c5;
 }
-
-.z-window-content {
-    padding: 0px;
-}	
 
 .message-paramenter{
 	max-height: 300pt; 

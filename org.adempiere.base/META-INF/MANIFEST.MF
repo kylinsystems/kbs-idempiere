@@ -7,13 +7,7 @@ Bundle-ClassPath: .,
  lib/bsh.jar,
  lib/commons-validator.jar,
  lib/cron4j.jar,
- lib/avalon-framework-api.jar,
- lib/bcmail-jdk15on.jar,
- lib/bcpkix-jdk15on.jar,
- lib/bcprov-jdk15on.jar,
- lib/bctsp-jdk15on.jar,
- lib/cryptacular.jar,
- lib/passay.jar
+ lib/avalon-framework-api.jar
 Export-Package: bsh,
  bsh.classpath,
  bsh.collection,
@@ -129,8 +123,11 @@ Bundle-Activator: org.adempiere.base.BaseActivator
 Service-Component: OSGI-INF/*.xml
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.equinox.app;bundle-version="0.0.0",
+ org.passay;bundle-version="0.0.0",
+ org.cryptacular,
  com.itextpdf;bundle-version="0.0.0",
  net.sf.supercsv.super-csv;bundle-version="0.0.0",
+ bcprov;bundle-version="1.54.0",
  org.krysalis.barcode4j;bundle-version="0.0.0",
  groovy,
  com.sun.activation.jakarta.activation;bundle-version="1.2.1",

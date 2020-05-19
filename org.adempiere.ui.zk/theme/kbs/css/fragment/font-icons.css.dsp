@@ -287,8 +287,8 @@
 	content: "\f0ac";
 }
 .z-icon-QuickForm:before {
-    content: "\f0ae";
+	content: "\f0ae";
 }
 .z-icon-UnSort:before {
-    content: "\f074";
+	content: "\f074";
 }

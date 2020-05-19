@@ -28,11 +28,11 @@ input:focus, textarea:focus, .z-combobox-input:focus, z-datebox-input:focus {
 
 .z-textbox[disabled], .z-intbox[disabled], .z-longbox[disabled], .z-doublebox[disabled], 
 .z-decimalbox[disabled], .z-datebox[disabled], .z-timebox[disabled] {
-    color: black !important;
-    background-color: #F0F0F0 !important;
-    cursor: default !important;
-    opacity: 1 !important;
-    border: 1px solid #cfcfcf !important;
+	color: black !important;
+	background-color: #F0F0F0 !important;
+	cursor: default !important;
+	opacity: 1 !important;
+	border: 1px solid #cfcfcf !important;
 }
 
 <%-- workaround for http://jira.idempiere.com/browse/IDEMPIERE-692 --%>

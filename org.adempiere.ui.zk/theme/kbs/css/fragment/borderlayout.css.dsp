@@ -42,7 +42,15 @@
 }
 
 .z-north-body, .z-south-body, .z-west-body, .z-center-body, .z-east-body {
-    background-color: #E9F0FF;
+    background-color: #ffffff;
+}
+
+.z-center-body .z-paging {
+    background: #e9f0ff;
+}
+
+.z-center-body .z-frozen-body {
+    background: #e9f0ff;
 }
 
 .z-east-splitter-button,

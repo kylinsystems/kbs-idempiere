@@ -8,7 +8,7 @@
 .find-window-simple .z-south .z-hbox, .find-window-advanced .z-south .z-hbox {
 	margin-top: 3px;
 	margin-left: 3px;
-	background-color: #eaf0ff;
+	background-color: #ffffff;
 }
 
 .find-window-simple .img-btn, .find-window-simple .img-btn.btn-ok.z-button, .find-window-simple .img-btn.btn-cancel.z-button,

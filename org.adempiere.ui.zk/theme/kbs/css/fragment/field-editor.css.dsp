@@ -78,16 +78,11 @@
 }
 
 .datetime-box {
-	display: inline-block;
 	white-space:nowrap;
 }
-
 .datetime-box .z-datebox {
-	display: inline;
 }
-
 .datetime-box .z-timebox {
-	display: inline;
 }
 
 span.grid-combobox-editor {
@@ -190,12 +185,11 @@ span.grid-combobox-editor {
 	cursor: default;
 	border: none;
 }
-
 .image-fit-contain {
-    object-fit: contain;
+	object-fit: contain;
 }
 .z-cell.image-field-cell {
-    z-index: 1;
+	z-index: 1;
 }
 
 .html-field {
