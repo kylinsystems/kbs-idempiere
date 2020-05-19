@@ -585,7 +585,7 @@
    <repository>
      <id>github</id>
      <name>GitHub kylinsystems Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/kylinsystems/kbs-idempiere</url>
+     <url>https://maven.pkg.github.com/kylinsystems/maven-repo</url>
    </repository>
 </distributionManagement>
 
