@@ -42,7 +42,7 @@
 }
 
 .z-north-body, .z-south-body, .z-west-body, .z-center-body, .z-east-body {
-    background-color: #ffffff;
+    background-color: #e9f0ff;
 }
 
 .z-center-body .z-paging {

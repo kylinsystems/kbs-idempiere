@@ -19,3 +19,7 @@
 .find-window .z-tabpanel {
     background-color: #FFFFFF;
 }
+
+.find-window .z-south-body {
+    background-color: #FFFFFF;
+}
