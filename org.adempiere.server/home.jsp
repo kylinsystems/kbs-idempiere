@@ -26,10 +26,10 @@ Theme Name: KBS Theme
 				<a href="<%=Prop.getProperty(Prop.OPTION_LINK)%>"  target="_blank">
 					<img name="img_option" src="<%=Prop.getImage("img_option.png")%>" border="0" title="<%=Prop.getProperty(Prop.OPTION_TEXT)%>"/>
 				</a>
-				<a id="felixConsole" href="<%=Prop.getProperty(Prop.FELIX_LINK)%>">
+				<a id="felixConsole" href="<%=Prop.getProperty(Prop.FELIX_LINK)%>" target="_blank">
 					<img name="img_felix" src="<%=Prop.getImage("img_felix.png")%>" border="0" title="<%=Prop.getProperty(Prop.FELIX_TEXT)%>"/>
 				</a>
-				<a id="ServerManagement" href="<%=Prop.getProperty(Prop.MONITOR_LINK)%>">
+				<a id="ServerManagement" href="<%=Prop.getProperty(Prop.MONITOR_LINK)%>" target="_blank">
 					<img name="img_idempiereMonitor" src="<%=Prop.getImage("img_idempiereMonitor.png")%>" border="0" title="<%=Prop.getProperty(Prop.MONITOR_TEXT)%>"/>
 				</a>
 			</div>
@@ -38,30 +38,30 @@ Theme Name: KBS Theme
 			<div id="main-content" class="main-content">
 				<div id="main-topButtons">
 					<div id="main-requestBtns" class="topBtnHeader">
-						<div id ="main-requestBtns-btnReq" class="topBtn">
+						<!-- <div id ="main-requestBtns-btnReq" class="topBtn">
 							<div class = "btnResoc-content">
 								<a href="<%=Prop.getProperty(Prop.SUPPORT_LINK)%>" target="_blank">
 									<img name="img_locsupport" src="<%=Prop.getImage("img_locsupport.png")%>" border="0" title="<%=Prop.getProperty(Prop.LOCAL_TEXT)%>"/>
 								</a>
 								<div class="main-txt-btn"><%=Prop.getProperty(Prop.LOCAL_TEXT)%></div>
 							</div>
-						</div>
-						<div id ="main-requestBtns-btnSendReq" class="topBtn">
+						</div> -->
+						<!-- <div id ="main-requestBtns-btnSendReq" class="topBtn">
 							<div class = "btnResoc-content">
 								<a href="<%=Prop.getProperty(Prop.RESOURCE_LINK)%>" target="_blank">
 									<img name="img_resource" src="<%=Prop.getImage("img_resource.png")%>" border="0" title="<%=Prop.getProperty(Prop.RESOURCE_TEXT)%>"/>
 								</a>
 								<div class="main-txt-btn"><%=Prop.getProperty(Prop.RESOURCE_TEXT)%></div>
 							</div>
-						</div>
-						<div id ="main-requestBtns-btnLocSupp" class="topBtn">
+						</div> -->
+						<!-- <div id ="main-requestBtns-btnLocSupp" class="topBtn">
 							<div class = "btnResoc-content">
 								<a href="<%=Prop.getProperty(Prop.WEBSTORE_LINK)%>" target="_blank">
 									<img name="img_webstore" src="<%=Prop.getImage("img_webstore.png")%>" border="0" title="<%=Prop.getProperty(Prop.WEBSTORE_TEXT)%>"/>
 								</a>
 								<div class="main-txt-btn"><%=Prop.getProperty(Prop.WEBSTORE_TEXT)%></div>
 							</div>
-						</div>
+						</div> -->
 						<!--
 						<div id ="main-requestBtns-btnResoc" class="topBtn">
 							<div class = "btnResoc-content">
@@ -86,14 +86,14 @@ Theme Name: KBS Theme
 				</div>
 				<div id="main-docuBtns">
 					<div id="main-docuBtns" class="topBtnFooter">
-						<div id ="main-docuBtns-btnIrc" class="bottomBtn">
+						<!-- <div id ="main-docuBtns-btnIrc" class="bottomBtn">
 							<div class = "btnDocu-content">
 								<a href="<%=Prop.getProperty(Prop.IRC_LINK)%>" target="_blank">
 									<img name="img_irc" src="<%=Prop.getImage("img_irc.png")%>" border="0" title="<%=Prop.getProperty(Prop.IRC_TEXT)%>"/>
 								</a>
 								<div class="main-txt-btn"><%=Prop.getProperty(Prop.IRC_TEXT)%></div>
 							</div>
-						</div>
+						</div> -->
 						<!--
 						<div id ="main-docuBtns-btnWiki" class="bottomBtn">
 							<div class = "btnDocu-content">
@@ -104,22 +104,22 @@ Theme Name: KBS Theme
 							</div>
 						</div>
 						-->
-						<div id ="main-docuBtns-btnForum" class="bottomBtn">
+						<!-- <div id ="main-docuBtns-btnForum" class="bottomBtn">
 							<div class = "btnDocu-content">
 								<a href="<%=Prop.getProperty(Prop.FORUMS_LINK)%>" target="_blank">
 									<img name="img_forum" src="<%=Prop.getImage("img_forum.png")%>" border="0" title="<%=Prop.getProperty(Prop.FORUMS_TEXT)%>"/>
 								</a>
 								<div class="main-txt-btn"><%=Prop.getProperty(Prop.FORUMS_TEXT)%></div>
 							</div>
-						</div>
-						<div id ="main-docuBtns-btnSuppReq" class="bottomBtn">
+						</div> -->
+						<!-- <div id ="main-docuBtns-btnSuppReq" class="bottomBtn">
 							<div class = "btnDocu-content">
 								<a href="<%=Prop.getProperty(Prop.SUPPORTREQ_LINK)%>" target="_blank">
 									<img name="img_supreq" src="<%=Prop.getImage("img_supreq.png")%>" border="0" title="<%=Prop.getProperty(Prop.SUPPORTREQUEST_TEXT)%>"/>
 								</a>
 								<div class="main-txt-btn"><%=Prop.getProperty(Prop.SUPPORTREQUEST_TEXT)%></div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div id="main-background">
@@ -160,7 +160,7 @@ Theme Name: KBS Theme
 				<%}%>
 			</div>
 			<div id="footercopyright">
-				&copy; Copyright 2019-<%=Prop.getYear()%> Kylinsystems - All rights reserved - <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="blank">KBS License is GPLv2</a>
+				&copy; Copyright 2019-<%=Prop.getYear()%> <a href="https://www.kylinsystems.com" target="blank">Kylinsystems</a> - All rights reserved - <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="blank">KBS License is GPLv2</a>
 				<%=Prop.getProperty(Prop.COPYRIGHT_TXT)%>
 			</div>
 		</div>
