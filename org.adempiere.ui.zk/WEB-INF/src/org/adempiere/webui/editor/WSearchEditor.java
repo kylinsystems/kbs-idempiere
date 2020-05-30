@@ -21,6 +21,7 @@ import static org.compiere.model.SystemIDs.COLUMN_C_INVOICELINE_M_PRODUCT_ID;
 import static org.compiere.model.SystemIDs.COLUMN_C_INVOICE_C_BPARTNER_ID;
 
 import java.beans.PropertyChangeEvent;
+import java.util.List;
 import java.util.Properties;
 import java.util.logging.Level;
 
@@ -32,7 +33,6 @@ import org.adempiere.webui.adwindow.ADWindowContent;
 import org.adempiere.webui.adwindow.QuickGridTabRowRenderer;
 import org.adempiere.webui.apps.AEnv;
 import org.adempiere.webui.component.ComboEditorBox;
-import org.adempiere.webui.component.Searchbox;
 import org.adempiere.webui.event.ContextMenuEvent;
 import org.adempiere.webui.event.ContextMenuListener;
 import org.adempiere.webui.event.DialogEvents;
@@ -138,7 +138,7 @@ public class WSearchEditor extends WEditor implements ContextMenuListener, Value
 	 */
 	public WSearchEditor (Lookup lookup, String label, String description, boolean mandatory, boolean readonly, boolean updateable)
 	{
-		super(new Searchbox(), label, description, mandatory, readonly, updateable);
+		super(new CustomSearchBox() , label, description, mandatory, readonly, updateable);
 
 		if (lookup == null)
 		{
@@ -154,7 +154,7 @@ public class WSearchEditor extends WEditor implements ContextMenuListener, Value
 	public WSearchEditor(String columnName, boolean mandatory, boolean readonly, boolean updateable,
     		Lookup lookup)
 	{
-		super(new Searchbox(), null, null, mandatory, readonly, updateable);
+		super(new CustomSearchBox(), null, null, mandatory, readonly, updateable);
 
 		if (lookup == null)
 		{
@@ -226,6 +226,15 @@ public class WSearchEditor extends WEditor implements ContextMenuListener, Value
 							.append(",")
 							.append("pagesize:")
 							.append(MAX_AUTO_COMPLETE_ROWS);
+						if (lookup instanceof MLookup) {
+							MLookup mlookup = (MLookup) lookup;
+							List<String> displayColumns = mlookup.getLookupInfo().lookupDisplayColumns;
+							if (displayColumns != null && displayColumns.size() > 0) {
+								query.append(",")
+									.append("searchcolumn:")
+									.append(displayColumns.get(0));
+							}
+						}
 						query.append("}");
 						s = query.toString();
 					}

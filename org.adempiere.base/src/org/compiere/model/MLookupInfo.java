@@ -20,6 +20,7 @@ import java.io.Serializable;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Properties;
 import java.util.logging.Level;
 
@@ -207,6 +208,8 @@ public class MLookupInfo implements Serializable, Cloneable
 	public String DisplayColumn;
 	
 	public int InfoWindowId;
+	
+	public List<String> lookupDisplayColumns = null;
 
 	/**
 	 * String representation
@@ -230,13 +233,22 @@ public class MLookupInfo implements Serializable, Cloneable
 		try
 		{
 			MLookupInfo clone = (MLookupInfo)super.clone();
+			clone.parsedValidationCode = "";
+			clone.IsValidated = false;
+			clone.ctx = null;
+			if (ZoomQuery != null)
+				clone.ZoomQuery = ZoomQuery.clone();
 			return clone;
 		}
-		catch (Exception e)
+		catch (CloneNotSupportedException e)
 		{
-			CLogger.get().log(Level.SEVERE, "", e);
+			throw new RuntimeException(e);
 		}
-		return null;
 	}	//	clone
+
+	@Override
+	public MLookupInfo clone() {
+		return cloneIt();
+	}
 
 }   //  MLookupInfo
