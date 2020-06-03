@@ -347,6 +347,13 @@
          unpack="false"/>
 
    <plugin
+         id="org.glassfish.jersey.containers.servlet"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
          id="org.glassfish.jersey.containers.servlet.core"
          download-size="0"
          install-size="0"
