@@ -935,3 +935,6 @@ BEGIN
 	INSERT INTO C_CITY (c_city_id,ad_client_id,ad_org_id,isactive,created,createdby,updated,updatedby,name,locode,coordinates,postal,areacode,c_country_id,c_region_id,c_city_uu)
 		 VALUES (nextid(56,'N'),'0','0','Y',statement_timestamp(),'100',statement_timestamp(),'100','阿勒泰地区','654300','\N','','\N','153',(SELECT max(c_region_id) FROM c_region where SUBSTRING(description,2,2) = '65'),generate_uuid());
 END$$;
+
+---- Register SQL
+SELECT register_migration_script('209901010000_Z001_cn_region_city.sql') FROM dual;
