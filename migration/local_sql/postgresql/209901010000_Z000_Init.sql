@@ -81,5 +81,10 @@ UPDATE ad_language SET issystemlanguage = 'N', isloginlocale = 'N' WHERE ad_lang
 ---- enable zh_CN
 UPDATE ad_language SET issystemlanguage = 'Y', isloginlocale = 'Y' WHERE ad_language = 'zh_CN';
 
+---- Setup Active Currency
+ UPDATE c_currency SET isactive = 'N';
+ UPDATE c_currency SET isactive = 'Y' WHERE iso_code='CNY' OR iso_code='USD' OR iso_code='EUR';
+
+
 ---- Register SQL
 SELECT register_migration_script('209901010000_Z000_Init.sql') FROM dual;
