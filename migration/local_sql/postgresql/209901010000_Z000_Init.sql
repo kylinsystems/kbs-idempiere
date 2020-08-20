@@ -75,6 +75,9 @@ update ad_toolbarbutton set seqno = 999 where ad_toolbarbutton_id = 200030;
 ---- Disable All Scheduler Job
 -- update ad_scheduler set isactive = 'N';
 
+---- Disable Country
+update c_country set isactive = 'N' where countrycode not in ('CN', 'US');
+
 ---- Setup AD_Language
 ---- disable es_CO
 UPDATE ad_language SET issystemlanguage = 'N', isloginlocale = 'N' WHERE ad_language = 'es_CO';
