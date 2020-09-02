@@ -5,4 +5,4 @@
 --update ad_sysconfig set value = '7.1.0.latest' where ad_sysconfig_id = 999999;
 	
 ---- Register SQL
-SELECT register_migration_script('DB_Version_20200830.sql') FROM dual;
+SELECT register_migration_script('DB_Version_20200902.sql') FROM dual;
