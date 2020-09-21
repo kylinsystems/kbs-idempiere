@@ -10,9 +10,7 @@ Bundle-ClassPath: .,
  lib/postgresql.jar
 Require-Bundle: org.adempiere.base;bundle-version="0.0.0",
  org.adempiere.install;bundle-version="0.0.0"
-Import-Package: junit.framework;version="3.8.2",
- org.junit;version="4.8.1",
- org.osgi.framework,
+Import-Package: org.osgi.framework,
  org.w3c.dom,
  javax.net,
  javax.management,
