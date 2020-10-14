@@ -1,6 +1,7 @@
 .z-toolbar.z-toolbar-tabs {
 	padding-top: 0px;
 	background-color: #E9F0FF;
+    padding-bottom: 0px;
 }
 
 .toolbar {
@@ -45,7 +46,6 @@
 }
 
 .z-toolbarbutton [class^="z-icon-"] {
-	font-size: larger;
 	color: inherit;
 }
 .z-toolbarbutton.toolbarbutton-with-text [class^="z-icon-"] {
@@ -100,7 +100,6 @@
     margin-right: 10px;
     margin-left: 10px;
     border: 1px;
-    padding: 0px;
 }
 @media screen and (max-width: 768px) {
   .toolbar-searchbox {

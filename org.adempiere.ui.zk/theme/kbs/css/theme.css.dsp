@@ -9,21 +9,28 @@ html,body {
 	width: 100%;
 	background-color: #D4E3F4;
 	color: #333;
-	font-family: Helvetica, Arial, "Microsoft YaHei New", "Microsoft Yahei", "å¾®è½¯é›…é»‘", å®‹ä½“, SimSun, STXihei, "åæ–‡ç»†é»‘", sans-serif;	
+	font-family: Helvetica, Arial, "Microsoft YaHei New", "Microsoft Yahei", "Î¢ÈíÑÅºÚ", ËÎÌå, SimSun, STXihei, "»ªÎÄÏ¸ºÚ", sans-serif;	
 	overflow: hidden;
 }
 
 body *:not([class*="z-icon-"], [class*="z-group-icon"]) {
-    font-family: Helvetica, Arial, "Microsoft YaHei New", "Microsoft Yahei", "å¾®è½¯é›…é»‘", å®‹ä½“, SimSun, STXihei, "åæ–‡ç»†é»‘", sans-serif;
+    font-family: Helvetica, Arial, "Microsoft YaHei New", "Microsoft Yahei", "Î¢ÈíÑÅºÚ", ËÎÌå, SimSun, STXihei, "»ªÎÄÏ¸ºÚ", sans-serif;
 }
 
 .z-html p{
 	margin:0px;
 }
 
-<%-- Tablet --%>
+[class*="z-"]:not([class*="z-icon-"]) {
+    font-size: 14px;
+}
+
+<%-- Mobile/Tablet --%>
 .tablet-scrolling {
 	-webkit-overflow-scrolling: touch;
+}
+.mobile [class*="z-"]:not([class*="z-icon-"]) {
+    font-size: 16px;
 }
 
 <%-- vbox fix for firefox and ie --%>
