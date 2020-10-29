@@ -14,8 +14,8 @@
 	min-height:14px;
 }
 <%-- highlight focus form element --%>
-input:focus, textarea:focus, .z-combobox-input:focus, z-datebox-input:focus {
-	border: 1px solid #F39700;
+input:focus, textarea:focus, .z-combobox-input:focus, z-datebox-input:focus, select:focus {
+	border: 1px solid #0000ff;
 	background: #FFFFCC;
 }
 
