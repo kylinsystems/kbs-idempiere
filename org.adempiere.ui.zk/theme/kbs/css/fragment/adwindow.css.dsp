@@ -350,8 +350,13 @@
 	}	
 }
 .adtab-grid > .z-grid-header > table > tbody > tr.z-columns > th.z-column > .z-column-content {
-	text-overflow: ellipsis;
-	white-space: pre-line;
+	text-overflow: ellipsis;	
+}
+@media only screen 
+  and (max-device-width: 700px) {
+	.mobile .adtab-grid > .z-grid-header > table > tbody > tr.z-columns > th.z-column > .z-column-content {
+		white-space: pre-line;
+	}
 }
 
 .mobile-overflow-link {
@@ -404,3 +409,27 @@
     0% { transform: translateX(100%); }
     100% { transform: translateX(0%); }
 }
+
+@media only screen 
+  and (max-device-width: 700px) {
+	.adwindow-detailpane-toolbar .z-paging-button {
+		margin-right: 2px;
+	}
+	.adwindow-detailpane-toolbar .z-paging-input {
+		margin-left: 3px;
+	}
+	.adwindow-detailpane-toolbar .z-paging-text {
+		margin-right: 3px;
+	}
+	.adwindow-detailpane-toolbar {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+@media only screen 
+  and (max-device-width: 350px) {
+ 	.adwindow-detailpane-toolbar .z-paging-input {
+		width: 30px;
+	}
+}
+  
