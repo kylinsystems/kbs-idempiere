@@ -43,11 +43,12 @@ when detect side effect, fix to only apply for parameter window*/
 	background-color: #e9f0ff;
 	padding: 4px 4px 0px 4px;
 	border: 1px solid #c5c5c5;
+	overflow: visible;
 }
 
 .message-paramenter{
 	max-height: 300pt; 
-	overflow: hidden; 
+	overflow: auto; 
 	margin: 10px;
 	line-height: normal;
 }
