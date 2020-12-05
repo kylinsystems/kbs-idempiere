@@ -37,7 +37,7 @@ public final class ThemeManager {
 	 */
 	public static String getVendorLogo() {
 		String theme = getTheme();
-		String def = ITheme.THEME_PATH_PREFIX+theme+ITheme.VENDOR_LOGO_IMAGE;
+		String def = THEME_PATH_PREFIX+theme+ITheme.VENDOR_LOGO_IMAGE;
 		return def;
 	}
 
@@ -82,7 +82,7 @@ public final class ThemeManager {
 	 */
 	public static String getLargeLogoIdempiere() {
 		String theme = getTheme();
-		String def = ITheme.THEME_PATH_PREFIX+ITheme.ZK_THEME_DEFAULT+ITheme.LOGIN_LOGO_IMAGE;
+		String def = THEME_PATH_PREFIX+ITheme.ZK_THEME_DEFAULT+ITheme.LOGIN_LOGO_IMAGE;
 		return def;
 	}	
 	
