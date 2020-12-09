@@ -36,13 +36,12 @@ when detect side effect, fix to only apply for parameter window*/
 	overflow: auto;
 	padding-bottom: 2vh;
 	flex-basis: auto;
-	border: 1px solid #c5c5c5;
 }
 
 .bottom-parameter-layout{
 	background-color: #e9f0ff;
 	padding: 4px 4px 0px 4px;
-	border: 1px solid #c5c5c5;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
 	overflow: visible;
 }
 
@@ -51,12 +50,6 @@ when detect side effect, fix to only apply for parameter window*/
 	overflow: auto; 
 	margin: 10px;
 	line-height: normal;
-}
-
-.message-parameter-layout{
-	width: 100%;
-	background-color: #CCE5F4;
-	border-bottom: 1px solid #c5c5c5;
 }
 
 .option-input-parameter{

@@ -7,14 +7,14 @@ tr.z-group {
 	color: #333;
 	width: auto;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .z-group td.z-group-inner {
 	overflow: hidden !important;
 	border-bottom: 1px solid #CFCFCF !important;
 	border-top: 1px solid #CFCFCF !important;
-	padding: 4px 5px;
+	padding: 1px 2px;
 }
 
 .z-group-icon {

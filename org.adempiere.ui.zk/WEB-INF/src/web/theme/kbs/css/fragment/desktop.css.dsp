@@ -111,7 +111,7 @@
 }
 
 .desktop-tabbox .z-tab-selected {
-	border-top: 4px solid #FCC654;
+	border-top: 2px solid #FCC654;
 	border-top-left-radius: 5px 5px;
 	border-top-right-radius: 5px 5px;
 }
@@ -130,7 +130,7 @@
 }
 
 .desktop-center {
-	padding-top: 2px;
+	padding-top: 1px;
 	background-color: #E4E4E4;
 }
 

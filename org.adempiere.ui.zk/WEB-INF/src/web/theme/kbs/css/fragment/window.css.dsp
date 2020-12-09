@@ -111,23 +111,17 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 	box-shadow: inset 0 1px 0 #ffffff;
 }
 
-<%-- customization for attachment window --%>
 .dialog-footer .z-south-body .z-hlayout {
     white-space: nowrap;
     background-color: #eaf0ff;
 }
 
-<%-- customization for search window --%>
 .dialog-footer .z-south-body {
     background-color: #eaf0ff;
 }
 
 .btn-ok {
 	font-weight: bold;
-}
-
-.z-vbox-separator td {
-    background-color: #E9F0FF;
 }
 
 <%-- notification message --%>

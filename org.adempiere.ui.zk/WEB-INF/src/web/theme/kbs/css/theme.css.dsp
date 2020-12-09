@@ -9,13 +9,8 @@ html,body {
 	width: 100%;
 	background-color: #D4E3F4;
 	color: #333;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft YaHei New', 'Microsoft Yahei', 'Î¢ÈíÑÅºÚ', 'ËÎÌå', 'SimSun', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft YaHei New', 'Microsoft Yahei', 'SimSun', sans-serif;
 	overflow: hidden;
-}
-
-
-body *:not([class*="z-icon-"], [class*="z-group-icon"]) {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft YaHei New', 'Microsoft Yahei', 'Î¢ÈíÑÅºÚ', 'ËÎÌå', 'SimSun', sans-serif;
 }
 
 .z-html p{
@@ -23,7 +18,7 @@ body *:not([class*="z-icon-"], [class*="z-group-icon"]) {
 }
 
 [class*="z-"]:not([class*="z-icon-"]):not([class*="z-group-icon-"]) {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft YaHei New', 'Microsoft Yahei', 'Î¢ÈíÑÅºÚ', 'ËÎÌå', 'SimSun', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft YaHei New', 'Microsoft Yahei', 'SimSun', sans-serif;
 }
 @media screen and (min-device-width: 2500px) {
 	[class*="z-"]:not([class*="z-icon-"]):not([class*="z-group-icon-"]) {

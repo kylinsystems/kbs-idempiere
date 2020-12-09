@@ -6,8 +6,7 @@
 }
 
 .find-window-simple .z-south .z-hbox, .find-window-advanced .z-south .z-hbox {
-	margin-top: 3px;
-	margin-left: 3px;
+	margin-top: 5px;
 	background-color: #ffffff;
 }
 

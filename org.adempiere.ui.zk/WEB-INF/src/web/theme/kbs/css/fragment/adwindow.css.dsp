@@ -79,7 +79,7 @@
 
 .adwindow-toolbar {
 	border: 0px;
-	padding: 4px 4px;
+	padding: 2px 4px;
 	height: 36px;
 	background-image: none;
 	background-color: #ffffff;
@@ -142,7 +142,7 @@
 .adwindow-detailpane-toolbar {
 	border: none;
 	height: 2em;
-	background: none;
+	background: #fefefe;
 }
 
 .adwindow-detailpane-toolbar .z-toolbar-body {
