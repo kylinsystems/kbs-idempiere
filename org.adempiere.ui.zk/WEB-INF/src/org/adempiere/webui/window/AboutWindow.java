@@ -202,6 +202,7 @@ public class AboutWindow extends Window implements EventListener<Event> {
 		tab.setParent(tabs);
 		tabPanel = createTrace();
 		tabPanel.setParent(tabPanels);
+		}
 	}
 
 	protected Tabpanel createTrace() {
