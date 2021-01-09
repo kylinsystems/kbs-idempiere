@@ -10,7 +10,7 @@ Bundle-ClassPath: .,
  lib/mchange-commons-java.jar,
  lib/postgresql.jar
 Require-Bundle: org.adempiere.base;bundle-version="0.0.0",
- org.adempiere.install;bundle-version="0.0.0"
+ org.adempiere.install;bundle-version="0.0.0";resolution:=optional
 Import-Package: org.osgi.framework,
  org.w3c.dom,
  javax.net,
