@@ -5,4 +5,4 @@ UPDATE ad_system SET lastbuildinfo = '8.2.0.latest' WHERE ad_system_id = 0;
 update ad_sysconfig set value = '8.2.0.latest' where ad_sysconfig_id = 999999;
 	
 ---- Register SQL
-SELECT register_migration_script('DB_Version_20210113.sql') FROM dual;
+SELECT register_migration_script('DB_Version_20210117.sql') FROM dual;
