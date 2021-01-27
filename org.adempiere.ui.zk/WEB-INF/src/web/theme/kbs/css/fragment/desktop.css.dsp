@@ -111,7 +111,7 @@
 }
 
 .desktop-tabbox .z-tab-selected {
-	border-top: 2px solid #FCC654;
+	border-top: 3px solid #F39700;
 	border-top-left-radius: 5px 5px;
 	border-top-right-radius: 5px 5px;
 }
