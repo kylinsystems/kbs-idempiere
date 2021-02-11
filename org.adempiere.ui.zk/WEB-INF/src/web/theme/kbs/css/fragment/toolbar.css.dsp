@@ -4,6 +4,14 @@
     padding-bottom: 0px;
 }
 
+.z-toolbar-content .z-separator-vertical {
+    display: inline-block;
+    border-left: 1px dotted #2997f3;
+    margin: 0px 6px 0px 6px;
+    width: 0px;
+    overflow: hidden;
+}
+
 .toolbar {
 	padding: 0px;
 }

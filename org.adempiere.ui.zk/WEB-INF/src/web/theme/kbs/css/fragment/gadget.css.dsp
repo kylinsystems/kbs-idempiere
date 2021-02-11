@@ -40,7 +40,7 @@
 .z-caption .z-caption-content {
 	padding: 1px 1px 1px 6px;
 	color: #262626; 
-	font-weight: 300;
+	font-weight: 700;
 	font-size: 13px;
 	cursor: move;
 }

@@ -35,16 +35,6 @@ update ad_sysconfig set value = 'Y' where name = 'ZK_GRID_AFTER_FIND';
 update ad_sysconfig set value = 'N' where name = 'LOGIN_SHOW_RESETPASSWORD';
 
 ---- Toolbar Customization
----- Window - Delete
-update ad_toolbarbutton set seqno = 25, isshowmore = 'N' where ad_toolbarbutton_id = 200033;
----- Window - Ignore
-update ad_toolbarbutton set seqno = 35, isshowmore = 'N' where ad_toolbarbutton_id = 200029;
----- Window - Refresh
-update ad_toolbarbutton set seqno = 55, isshowmore = 'N' where  ad_toolbarbutton_id = 200037;
----- Window - Parent
-update ad_toolbarbutton set seqno = 64, isshowmore = 'N' where  ad_toolbarbutton_id = 200043;
----- Window - Detail
-update ad_toolbarbutton set seqno = 66, isshowmore = 'N' where  ad_toolbarbutton_id = 200044;
 ---- Window - Help
 update ad_toolbarbutton set seqno = 999 where ad_toolbarbutton_id = 200030;
 
